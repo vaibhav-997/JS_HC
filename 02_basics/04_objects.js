@@ -7,11 +7,11 @@ tinder.isLoggedIn = false
 // console.log(tinder)
 
 const regularUser = {
-    email : 'some@gmail.com',
-    fullname : {
-        userfullname:{
-            firstname : 'vaibhav',
-            lastname : 'Inamdar'
+    email: 'some@gmail.com',
+    fullname: {
+        userfullname: {
+            firstname: 'vaibhav',
+            lastname: 'Inamdar'
         }
     }
 
@@ -20,20 +20,20 @@ const regularUser = {
 // console.log(regularUser.fullname.userfullname.firstname)
 
 const obj1 = {
-    1:'a',
-    2:'b',
-    
+    1: 'a',
+    2: 'b',
+
 }
 
 const obj2 = {
-    3:'a',
-    4:'b',
-    
+    3: 'a',
+    4: 'b',
+
 }
 const obj4 = {
-    5:'a',
-    6:'b',
-    
+    5: 'a',
+    6: 'b',
+
 }
 
 // const obj3 = {obj1, obj2}
@@ -41,41 +41,63 @@ const obj4 = {
 // const obj3 = Object.assign({}, obj1, obj2, obj4)  // creating a sigle object of two objects
 
 
-const obj3 = {...obj1, ...obj2, ...obj4} // spread operator
+const obj3 = { ...obj1, ...obj2, ...obj4 } // spread operator
 // console.log(obj3)
 
 const users = [
     {
-        id : 1,
+        id: 1,
         email: 'v@v.com'
     },
-    
+
     {
-        id : 1,
+        id: 1,
         email: 'v@v.com'
     },
-    
+
     {
-        id : 1,
+        id: 1,
         email: 'v@v.com'
     },
-    
+
     {
-        id : 1,
+        id: 1,
         email: 'v@v.com'
     },
-    
+
 ]
 
 users[1].email
-console.log(tinder)
+// console.log(tinder)
 
-console.log(Object.keys(tinder)) // return the array
-console.log(Object.values(tinder)) 
-console.log(Object.entries(tinder))
+// console.log(Object.keys(tinder)) // return the array
+// console.log(Object.values(tinder))
+// console.log(Object.entries(tinder))
 
-console.log(tinder.hasOwnProperty('isLooged'))  // gives boolean if the property is available
+// console.log(tinder.hasOwnProperty('isLooged'))  // gives boolean if the property is available
 
+
+
+//Destructing the objects
+const course = {
+    coursename: 'js in hindi',
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+const { courseInstructor: instructor } = course
+
+console.log(instructor)
+
+
+
+// Api
+
+// {
+//     'name' : "Vaibhav",
+//     'coursename' : 'JS in Hindi',
+//     'price' : 'Free'
+// }
 
 
 
