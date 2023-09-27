@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chau aur Code</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // runs after time and stops
+    /* setTimeout(function (){
+        console.log('vaibhav')
+    },2000) */
+
+    // continuously runs after the time
+const sayVaibhav = ()=>{
+console.log('Vaibhav')
+}
+
+setTimeout(sayVaibhav,2000)
+const changeText = ()=>{
+    document.querySelector('h1').innerText = 'Best js series'
+}
+
+const changeMe = setTimeout(changeText, 2000)
+
+document.querySelector('#stop').addEventListener('click',(e)=>{
+    clearTimeout(changeMe)
+    console.log('Stopped')
+})
+
+</script>
+</html>
